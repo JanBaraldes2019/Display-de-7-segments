@@ -16,27 +16,17 @@ const int led5 = 5;
 const int led6 = 6;
 const int led7 = 7;
 
-const int buttonPin = 8;
-
 //*********************************** SETUP **************************************
 
 void setup()
 {
   DDRD = B11111111;
-  pinMode(buttonPin,INPUT);
 }
 //************************************ LOOP *************************************
 
 void loop()
 {
-  
- if (digitalRead(buttonPin)==0)
- {
-   PORTD = B0000000;
    
- }
-  else{
-  
    numero0();   
    delay(1000);
    numero0();
@@ -67,7 +57,6 @@ void loop()
    numero9();
    delay(1000);
     
-  }
 }
 //*************************************** FUNCIONS ********************************
 
